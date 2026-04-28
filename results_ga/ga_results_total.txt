@@ -1,0 +1,15 @@
+australia_iptv : 	score=4888 
+canada_pw 	score=5670 
+china_pw 	score=3113 
+croatia_tv_input 	score=2220 
+france_iptv 	score=10983 
+germany_tv_input 	score=1598 
+kosovo_tv_input 	score=2582 
+netherlands_tv_input 	score=2634 
+singapore_pw 	score=6986 
+spain_iptv 	score=6655 
+toy 	score=510 
+uk_iptv 	score=9948 
+uk_tv_input 	score=2266 
+us_iptv 	score=5560 
+usa_tv_input 	score=3598 

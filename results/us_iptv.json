@@ -1,0 +1,473 @@
+{
+  "scheduled_programs": [
+    {
+      "program_id": "dwenglish_us_dw_news_2026-01-04_0000",
+      "channel_id": 1741,
+      "start": 0,
+      "end": 15
+    },
+    {
+      "program_id": "dwenglish_us_sports_life_2026-01-04_0015",
+      "channel_id": 1741,
+      "start": 15,
+      "end": 30
+    },
+    {
+      "program_id": "dwenglish_us_tomorrow_today_2026-01-04_0030",
+      "channel_id": 1741,
+      "start": 30,
+      "end": 60
+    },
+    {
+      "program_id": "dwenglish_us_dw_news_2026-01-04_0060",
+      "channel_id": 1741,
+      "start": 60,
+      "end": 62
+    },
+    {
+      "program_id": "kidoodletv_us_paw_patrol_pup_tales_2026-01-04_0075",
+      "channel_id": 5257,
+      "start": 75,
+      "end": 85
+    },
+    {
+      "program_id": "phoenixnorthameric_phoenix_weather_forecast_2026-01-04_0087",
+      "channel_id": 8633,
+      "start": 87,
+      "end": 90
+    },
+    {
+      "program_id": "espn2_us_nfl_countdown_special_ed_2026-01-04_0090",
+      "channel_id": 3532,
+      "start": 90,
+      "end": 110
+    },
+    {
+      "program_id": "espn2_us_nfl_kickoff_2026-01-04_0110",
+      "channel_id": 3532,
+      "start": 110,
+      "end": 120
+    },
+    {
+      "program_id": "nhkworld_us_nhk_newsline_2026-01-04_0120",
+      "channel_id": 7193,
+      "start": 120,
+      "end": 130
+    },
+    {
+      "program_id": "kidoodletv_us_game_toons_2026-01-04_0133",
+      "channel_id": 5257,
+      "start": 133,
+      "end": 149
+    },
+    {
+      "program_id": "dwenglish_us_euromaxx_2026-01-04_0150",
+      "channel_id": 1741,
+      "start": 150,
+      "end": 180
+    },
+    {
+      "program_id": "dwenglish_us_dw_news_2026-01-04_0180",
+      "channel_id": 1741,
+      "start": 180,
+      "end": 182
+    },
+    {
+      "program_id": "documentary_us_ninety_five_senses_block_2026-01-04_0183",
+      "channel_id": 2197,
+      "start": 183,
+      "end": 207
+    },
+    {
+      "program_id": "documentary_us_balloonfest_2026-01-04_0207",
+      "channel_id": 2197,
+      "start": 207,
+      "end": 218
+    },
+    {
+      "program_id": "itvnextra_us_defacto_2026-01-04_0220",
+      "channel_id": 10795,
+      "start": 220,
+      "end": 230
+    },
+    {
+      "program_id": "cgtncctvnews_us_the_world_today_2026-01-04_0240",
+      "channel_id": 990,
+      "start": 240,
+      "end": 255
+    },
+    {
+      "program_id": "cgtncctvnews_us_sports_scene_2026-01-04_0255",
+      "channel_id": 990,
+      "start": 255,
+      "end": 270
+    },
+    {
+      "program_id": "tvn24_us_akademia_ogrodnika_2026-01-04_0270",
+      "channel_id": 9316,
+      "start": 270,
+      "end": 275
+    },
+    {
+      "program_id": "livexlive_us_livezone_news_monthly_so_2026-01-04_0285",
+      "channel_id": 5322,
+      "start": 285,
+      "end": 300
+    },
+    {
+      "program_id": "dwenglish_us_dw_news_2026-01-04_0300",
+      "channel_id": 1741,
+      "start": 300,
+      "end": 315
+    },
+    {
+      "program_id": "dwenglish_us_sports_life_2026-01-04_0315",
+      "channel_id": 1741,
+      "start": 315,
+      "end": 330
+    },
+    {
+      "program_id": "cbswboc_us_outdoors_delmarva_2026-01-04_0330",
+      "channel_id": 880,
+      "start": 330,
+      "end": 360
+    },
+    {
+      "program_id": "keytvwcaycd_us_local_news_2026-01-04_0360",
+      "channel_id": 5233,
+      "start": 360,
+      "end": 375
+    },
+    {
+      "program_id": "usatodaynews_us_usa_today_top_headlines_2026-01-04_0375",
+      "channel_id": 9643,
+      "start": 375,
+      "end": 390
+    },
+    {
+      "program_id": "tvpinfo_us_serwis_info_poranek_2026-01-04_0390",
+      "channel_id": 9319,
+      "start": 390,
+      "end": 393
+    },
+    {
+      "program_id": "abcwolo_us_talkin_sports_with_my_da_2026-01-04_0395",
+      "channel_id": 187,
+      "start": 395,
+      "end": 420
+    },
+    {
+      "program_id": "theohiochannel_us_buckeye_guard_2026-01-04_0420",
+      "channel_id": 9456,
+      "start": 420,
+      "end": 435
+    },
+    {
+      "program_id": "theohiochannel_us_buckeye_guard_2026-01-04_0435",
+      "channel_id": 9456,
+      "start": 435,
+      "end": 450
+    },
+    {
+      "program_id": "willow_us_cricket_review_the_ashes_2026-01-04_0450",
+      "channel_id": 9971,
+      "start": 450,
+      "end": 470
+    },
+    {
+      "program_id": "willow_us_cricket_preview_bbl_2025_2026-01-04_0470",
+      "channel_id": 9971,
+      "start": 470,
+      "end": 480
+    },
+    {
+      "program_id": "nhkworld_us_nhk_newsline_2026-01-04_0480",
+      "channel_id": 7193,
+      "start": 480,
+      "end": 490
+    },
+    {
+      "program_id": "dwenglish_us_shift_2026-01-04_0495",
+      "channel_id": 1741,
+      "start": 495,
+      "end": 510
+    },
+    {
+      "program_id": "abckmbc_us_african_american_short_f_2026-01-04_0510",
+      "channel_id": 62,
+      "start": 510,
+      "end": 540
+    },
+    {
+      "program_id": "yahoofinance_us_financial_freestyle_2026-01-04_0540",
+      "channel_id": 10018,
+      "start": 540,
+      "end": 570
+    },
+    {
+      "program_id": "yahoofinance_us_financial_freestyle_2026-01-04_0570",
+      "channel_id": 10018,
+      "start": 570,
+      "end": 600
+    },
+    {
+      "program_id": "nhkworld_us_nhk_newsline_2026-01-04_0600",
+      "channel_id": 7193,
+      "start": 600,
+      "end": 610
+    },
+    {
+      "program_id": "dwenglish_us_shift_2026-01-04_0615",
+      "channel_id": 1741,
+      "start": 615,
+      "end": 630
+    },
+    {
+      "program_id": "tvn24_us_serwis_informacyjny_pogo_2026-01-04_0630",
+      "channel_id": 9316,
+      "start": 630,
+      "end": 645
+    },
+    {
+      "program_id": "abckvii_us_the_armstrong_williams_s_2026-01-04_0650",
+      "channel_id": 103,
+      "start": 650,
+      "end": 660
+    },
+    {
+      "program_id": "keytvwcaycd_us_local_news_2026-01-04_0660",
+      "channel_id": 5233,
+      "start": 660,
+      "end": 675
+    },
+    {
+      "program_id": "paramount_withshow_the_hunt_for_red_october_2026-01-04_0565",
+      "channel_id": 8471,
+      "start": 675,
+      "end": 705
+    },
+    {
+      "program_id": "kidoodletv_us_hogie_the_globehopper_2026-01-04_0705",
+      "channel_id": 5257,
+      "start": 705,
+      "end": 720
+    },
+    {
+      "program_id": "14kjzz_us_positively_america_with__2026-01-04_0720",
+      "channel_id": 0,
+      "start": 720,
+      "end": 750
+    },
+    {
+      "program_id": "14kjzz_us_small_town_big_deal_2026-01-04_0750",
+      "channel_id": 0,
+      "start": 750,
+      "end": 780
+    },
+    {
+      "program_id": "telemundoktmd_us_primero_y_diez_2026-01-04_0780",
+      "channel_id": 9376,
+      "start": 780,
+      "end": 795
+    },
+    {
+      "program_id": "telemundoktmd_us_primero_y_diez_2026-01-04_0795",
+      "channel_id": 9376,
+      "start": 795,
+      "end": 810
+    },
+    {
+      "program_id": "antennatvkhnldt3_u_the_benny_hill_show_2026-01-04_0810",
+      "channel_id": 440,
+      "start": 810,
+      "end": 840
+    },
+    {
+      "program_id": "keytvwcaycd_us_local_news_2026-01-04_0840",
+      "channel_id": 5233,
+      "start": 840,
+      "end": 855
+    },
+    {
+      "program_id": "keytvwcaycd_us_island_days_2026-01-04_0855",
+      "channel_id": 5233,
+      "start": 855,
+      "end": 860
+    },
+    {
+      "program_id": "themoviechannelext_planes_trains_and_automo_2026-01-04_0860",
+      "channel_id": 9451,
+      "start": 860,
+      "end": 890
+    },
+    {
+      "program_id": "boomerang_us_tom_and_jerry_2026-01-04_0890",
+      "channel_id": 645,
+      "start": 890,
+      "end": 900
+    },
+    {
+      "program_id": "nbaleaguepass1_us_nba_league_pass_2026-01-04_0900",
+      "channel_id": 5984,
+      "start": 900,
+      "end": 930
+    },
+    {
+      "program_id": "antena3int_us_deportes_2026-01-04_0939",
+      "channel_id": 437,
+      "start": 939,
+      "end": 942
+    },
+    {
+      "program_id": "antena3int_us_el_tiempo_2026-01-04_0942",
+      "channel_id": 437,
+      "start": 942,
+      "end": 946
+    },
+    {
+      "program_id": "bikemag_us_2022_hot_wheels_nitro_ju_2026-01-04_0947",
+      "channel_id": 632,
+      "start": 947,
+      "end": 953
+    },
+    {
+      "program_id": "nbcsportsonpeacock_nbc_sports_now_hang_tigh_2026-01-04_0958",
+      "channel_id": 6159,
+      "start": 958,
+      "end": 960
+    },
+    {
+      "program_id": "foxwbocdt2_us_outdoors_delmarva_2026-01-04_0960",
+      "channel_id": 4248,
+      "start": 960,
+      "end": 990
+    },
+    {
+      "program_id": "pbskisu_us_vegesaurs_2026-01-04_0990",
+      "channel_id": 7907,
+      "start": 990,
+      "end": 1005
+    },
+    {
+      "program_id": "cspan3_us_reel_america_2026-01-04_1005",
+      "channel_id": 1182,
+      "start": 1005,
+      "end": 1010
+    },
+    {
+      "program_id": "phoenixnorthameric_phoenix_weather_forecast_2026-01-04_1015",
+      "channel_id": 8634,
+      "start": 1015,
+      "end": 1020
+    },
+    {
+      "program_id": "keytvwcaycd_us_local_news_2026-01-04_1020",
+      "channel_id": 5233,
+      "start": 1020,
+      "end": 1035
+    },
+    {
+      "program_id": "motorvisiontv_us_petrolheads_episode_22_2026-01-04_1035",
+      "channel_id": 5814,
+      "start": 1035,
+      "end": 1065
+    },
+    {
+      "program_id": "motorvisiontv_us_aston_martin_db4_gt_zaga_2026-01-04_1065",
+      "channel_id": 5814,
+      "start": 1065,
+      "end": 1074
+    },
+    {
+      "program_id": "motorvisiontv_us_chevrolet_corvette_c7_gr_2026-01-04_1074",
+      "channel_id": 5814,
+      "start": 1074,
+      "end": 1080
+    },
+    {
+      "program_id": "nhkworld_us_nhk_newsline_2026-01-04_1080",
+      "channel_id": 7193,
+      "start": 1080,
+      "end": 1090
+    },
+    {
+      "program_id": "dwenglish_us_sports_life_2026-01-04_1095",
+      "channel_id": 1741,
+      "start": 1095,
+      "end": 1110
+    },
+    {
+      "program_id": "abckifi_us_game_time_with_boomer_es_2026-01-04_1110",
+      "channel_id": 52,
+      "start": 1110,
+      "end": 1140
+    },
+    {
+      "program_id": "nhkworld_us_nhk_newsline_2026-01-04_1140",
+      "channel_id": 7193,
+      "start": 1140,
+      "end": 1150
+    },
+    {
+      "program_id": "tvn24_us_serwis_informacyjny_2026-01-04_1150",
+      "channel_id": 9316,
+      "start": 1150,
+      "end": 1165
+    },
+    {
+      "program_id": "phoenixnorthameric_phoenix_weather_forecast_2026-01-04_1167",
+      "channel_id": 8633,
+      "start": 1167,
+      "end": 1170
+    },
+    {
+      "program_id": "vixpremiumdeportes_vix_premium_deportes_16_2026-01-04_1170",
+      "channel_id": 9849,
+      "start": 1170,
+      "end": 1190
+    },
+    {
+      "program_id": "vixpremiumdeportes_vix_premium_deportes_16_2026-01-04_1190",
+      "channel_id": 9849,
+      "start": 1190,
+      "end": 1200
+    },
+    {
+      "program_id": "23newswvua_us_wild_child_2026-01-04_1200",
+      "channel_id": 1,
+      "start": 1200,
+      "end": 1230
+    },
+    {
+      "program_id": "23newswvua_us_wild_child_2026-01-04_1230",
+      "channel_id": 1,
+      "start": 1230,
+      "end": 1260
+    },
+    {
+      "program_id": "23newswvua_us_beulah_baptist_church_of_2026-01-04_1260",
+      "channel_id": 1,
+      "start": 1260,
+      "end": 1290
+    },
+    {
+      "program_id": "23newswvua_us_miracle_deliverance_temp_2026-01-04_1290",
+      "channel_id": 1,
+      "start": 1290,
+      "end": 1320
+    },
+    {
+      "program_id": "23newswvua_us_tommy_wilcox_outdoors_2026-01-04_1320",
+      "channel_id": 1,
+      "start": 1320,
+      "end": 1350
+    },
+    {
+      "program_id": "23newswvua_us_paid_programming_2026-01-04_1350",
+      "channel_id": 1,
+      "start": 1350,
+      "end": 1380
+    }
+  ],
+  "total_score": 5560
+}

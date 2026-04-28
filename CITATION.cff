@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "Smart TV Scheduling with Segment-Based Deterministic Scheduling (SBDS)"
+message: "If you use this software, please cite the repository and the associated paper."
+type: software
+authors:
+  - family-names: "Bylygbashi"
+    given-names: "Shefket"
+repository-code: "https://github.com/shefketbylykbashi/smart-tv-scheduling-sbds"
+license: "MIT"
+version: "1.0.0"
+date-released: 2026-03-29
+url: "https://github.com/shefketbylykbashi/smart-tv-scheduling-sbds"
+keywords:
+  - smart tv scheduling
+  - deterministic scheduling
+  - dynamic programming
+  - segment-based optimization
+  - scheduling
+  - benchmark instances
+abstract: >
+  Deterministic segment-based scheduler for the TV Channel Scheduling Optimization Problem.
+  The method generates feasible candidate segments, scores them using content value,
+  preference bonuses, and truncation penalties, then optimizes the resulting search space
+  through dynamic programming with deterministic duplicate-elimination repair.

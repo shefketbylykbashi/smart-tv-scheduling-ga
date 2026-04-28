@@ -1,0 +1,323 @@
+{
+  "scheduled_programs": [
+    {
+      "program_id": "nsw_sydneyfoxsport_gameday_live_4_1_26_2026-01-04_0000",
+      "channel_id": 350,
+      "start": 0,
+      "end": 30
+    },
+    {
+      "program_id": "nsw_sydneyfoxsport_gameday_live_4_1_26_2026-01-04_0030",
+      "channel_id": 350,
+      "start": 30,
+      "end": 60
+    },
+    {
+      "program_id": "nhkworld_japan_au_nhk_newsline_2026-01-04_0060",
+      "channel_id": 341,
+      "start": 60,
+      "end": 70
+    },
+    {
+      "program_id": "tlc_2_au_match_me_abroad_2026-01-04_0075",
+      "channel_id": 465,
+      "start": 75,
+      "end": 105
+    },
+    {
+      "program_id": "sbsvicelandsydney__lee_lin_chin_s_fashionis_2026-01-04_0110",
+      "channel_id": 412,
+      "start": 110,
+      "end": 120
+    },
+    {
+      "program_id": "trtworld_au_news_2026-01-04_0120",
+      "channel_id": 467,
+      "start": 120,
+      "end": 135
+    },
+    {
+      "program_id": "sbsvicelandadelaid_lee_lin_chin_s_fashionis_2026-01-04_0140",
+      "channel_id": 405,
+      "start": 140,
+      "end": 150
+    },
+    {
+      "program_id": "abckids_abctvplusa_numberblocks_2026-01-04_0158",
+      "channel_id": 102,
+      "start": 158,
+      "end": 163
+    },
+    {
+      "program_id": "sbsvicelandbrisban_lee_lin_chin_s_fashionis_2026-01-04_0170",
+      "channel_id": 406,
+      "start": 170,
+      "end": 180
+    },
+    {
+      "program_id": "abcnewsbrisbane_au_abc_news_2026-01-04_0180",
+      "channel_id": 120,
+      "start": 180,
+      "end": 210
+    },
+    {
+      "program_id": "abckids_abctvplusd_numberblocks_2026-01-04_0218",
+      "channel_id": 103,
+      "start": 218,
+      "end": 223
+    },
+    {
+      "program_id": "beinsports3_au_laliga_goals_galore_vini_2026-01-04_0230",
+      "channel_id": 497,
+      "start": 230,
+      "end": 240
+    },
+    {
+      "program_id": "espn2_au_nothing_but_net_weekend__2026-01-04_0240",
+      "channel_id": 190,
+      "start": 240,
+      "end": 270
+    },
+    {
+      "program_id": "10peachadelaide_au_ridiculousness_2026-01-04_0270",
+      "channel_id": 9,
+      "start": 270,
+      "end": 300
+    },
+    {
+      "program_id": "expo_au_lawn_barber_2026-01-04_0300",
+      "channel_id": 291,
+      "start": 300,
+      "end": 330
+    },
+    {
+      "program_id": "sbsperth_au_pbs_washington_week_with_2026-01-04_0330",
+      "channel_id": 402,
+      "start": 330,
+      "end": 355
+    },
+    {
+      "program_id": "abckids_abc_vplusc_odd_squad_2026-01-04_0357",
+      "channel_id": 100,
+      "start": 357,
+      "end": 369
+    },
+    {
+      "program_id": "abckids_abc_vplusc_odd_squad_2026-01-04_0369",
+      "channel_id": 100,
+      "start": 369,
+      "end": 381
+    },
+    {
+      "program_id": "10peachmelbourne_a_friends_2026-01-04_0390",
+      "channel_id": 12,
+      "start": 390,
+      "end": 420
+    },
+    {
+      "program_id": "hillsongchannel_au_enjoying_everyday_life_w_2026-01-04_0420",
+      "channel_id": 322,
+      "start": 420,
+      "end": 450
+    },
+    {
+      "program_id": "10peachbrisbane_au_friends_2026-01-04_0450",
+      "channel_id": 10,
+      "start": 450,
+      "end": 480
+    },
+    {
+      "program_id": "nsw_sydneyfoxsport_full_time_live_4_1_26_2026-01-04_0480",
+      "channel_id": 350,
+      "start": 480,
+      "end": 510
+    },
+    {
+      "program_id": "10peachsydney_au_the_big_bang_theory_2026-01-04_0510",
+      "channel_id": 14,
+      "start": 510,
+      "end": 540
+    },
+    {
+      "program_id": "10peachsydney_au_the_big_bang_theory_2026-01-04_0540",
+      "channel_id": 14,
+      "start": 540,
+      "end": 570
+    },
+    {
+      "program_id": "cnn_au_blueprint_2026-01-04_0570",
+      "channel_id": 160,
+      "start": 570,
+      "end": 600
+    },
+    {
+      "program_id": "aljazeera_au_news_live_2026-01-04_0600",
+      "channel_id": 138,
+      "start": 600,
+      "end": 630
+    },
+    {
+      "program_id": "daystar_au_prophecy_watchers_2026-01-04_0630",
+      "channel_id": 181,
+      "start": 630,
+      "end": 660
+    },
+    {
+      "program_id": "reallife_au_border_security_australi_2026-01-04_0660",
+      "channel_id": 377,
+      "start": 660,
+      "end": 690
+    },
+    {
+      "program_id": "nsw_sydneyfoxsport_full_time_live_4_1_26_2026-01-04_0690",
+      "channel_id": 350,
+      "start": 690,
+      "end": 720
+    },
+    {
+      "program_id": "10bolddarwin_au_ncis_2026-01-04_0720",
+      "channel_id": 2,
+      "start": 720,
+      "end": 775
+    },
+    {
+      "program_id": "sbsfoodsydney_au_andrew_zimmern_s_wild_ga_2026-01-04_0780",
+      "channel_id": 398,
+      "start": 780,
+      "end": 810
+    },
+    {
+      "program_id": "abcnewstasmania_au_heywire_2026-01-04_0810",
+      "channel_id": 127,
+      "start": 810,
+      "end": 840
+    },
+    {
+      "program_id": "abcnewstasmania_au_abc_news_overnight_2026-01-04_0840",
+      "channel_id": 127,
+      "start": 840,
+      "end": 854
+    },
+    {
+      "program_id": "mutv_au_match_day_half_time_show_2026-01-04_0855",
+      "channel_id": 332,
+      "start": 855,
+      "end": 870
+    },
+    {
+      "program_id": "10shakebrisbane_au_just_for_laughs_australi_2026-01-04_0870",
+      "channel_id": 17,
+      "start": 870,
+      "end": 900
+    },
+    {
+      "program_id": "abcnewsdarwin_au_dw_news_2026-01-04_0900",
+      "channel_id": 122,
+      "start": 900,
+      "end": 915
+    },
+    {
+      "program_id": "abcnewsdarwin_au_abc_news_overnight_2026-01-04_0915",
+      "channel_id": 122,
+      "start": 915,
+      "end": 930
+    },
+    {
+      "program_id": "nsw_sydneyfoxsport_fox_sports_news_2026-01-04_0930",
+      "channel_id": 350,
+      "start": 930,
+      "end": 960
+    },
+    {
+      "program_id": "abcnewscanberra_au_dw_news_2026-01-04_0960",
+      "channel_id": 121,
+      "start": 960,
+      "end": 975
+    },
+    {
+      "program_id": "abcnewscanberra_au_abc_news_overnight_2026-01-04_0975",
+      "channel_id": 121,
+      "start": 975,
+      "end": 989
+    },
+    {
+      "program_id": "cgtn_au_travelogue_2026-01-04_0990",
+      "channel_id": 157,
+      "start": 990,
+      "end": 1020
+    },
+    {
+      "program_id": "nhkworld_japan_au_nhk_newsline_2026-01-04_1020",
+      "channel_id": 341,
+      "start": 1020,
+      "end": 1030
+    },
+    {
+      "program_id": "fueltv_au_snowbound_2026-01-04_1030",
+      "channel_id": 498,
+      "start": 1030,
+      "end": 1050
+    },
+    {
+      "program_id": "acc_au_praise_prayer_and_preach_2026-01-04_1050",
+      "channel_id": 132,
+      "start": 1050,
+      "end": 1080
+    },
+    {
+      "program_id": "nhkworld_japan_au_nhk_newsline_2026-01-04_1080",
+      "channel_id": 341,
+      "start": 1080,
+      "end": 1090
+    },
+    {
+      "program_id": "beinsports1_au_laliga_goals_galore_stua_2026-01-04_1090",
+      "channel_id": 495,
+      "start": 1090,
+      "end": 1105
+    },
+    {
+      "program_id": "abckids_abctvplusm_hey_duggee_2026-01-04_1115",
+      "channel_id": 105,
+      "start": 1115,
+      "end": 1122
+    },
+    {
+      "program_id": "abcmedarwin_au_abc_news_update_2026-01-04_1122",
+      "channel_id": 111,
+      "start": 1122,
+      "end": 1124
+    },
+    {
+      "program_id": "nhkworld_japan_au_nhk_newsline_2026-01-04_1140",
+      "channel_id": 341,
+      "start": 1140,
+      "end": 1150
+    },
+    {
+      "program_id": "britishcinema_au_mr_turner_2026-01-04_1150",
+      "channel_id": 152,
+      "start": 1150,
+      "end": 1180
+    },
+    {
+      "program_id": "crime_au_ncis_2026-01-04_1180",
+      "channel_id": 180,
+      "start": 1180,
+      "end": 1210
+    },
+    {
+      "program_id": "10boldbrisbane_au_home_shopping_2026-01-04_1290",
+      "channel_id": 1,
+      "start": 1290,
+      "end": 1320
+    },
+    {
+      "program_id": "10boldbrisbane_au_home_shopping_2026-01-04_1320",
+      "channel_id": 1,
+      "start": 1320,
+      "end": 1350
+    }
+  ],
+  "total_score": 4883
+}

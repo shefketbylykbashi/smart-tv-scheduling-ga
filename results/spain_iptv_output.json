@@ -1,0 +1,593 @@
+{
+  "scheduled_programs": [
+    {
+      "program_id": "esport3_es_dakar_2025_2026-01-04_0000",
+      "channel_id": 93,
+      "start": 0,
+      "end": 10
+    },
+    {
+      "program_id": "esport3_es_3catinfo_esports_2026-01-04_0010",
+      "channel_id": 93,
+      "start": 10,
+      "end": 30
+    },
+    {
+      "program_id": "daznlaliga_es_res_menes_laliga_hypermo_2026-01-04_0030",
+      "channel_id": 71,
+      "start": 30,
+      "end": 45
+    },
+    {
+      "program_id": "france24_fr_es_actuelles_2026-01-04_0045",
+      "channel_id": 100,
+      "start": 45,
+      "end": 60
+    },
+    {
+      "program_id": "euronews_es_euronews_week_end_2026-01-04_0060",
+      "channel_id": 94,
+      "start": 60,
+      "end": 65
+    },
+    {
+      "program_id": "teledeporte_es_res_menes_laliga_hypermo_2026-01-04_0070",
+      "channel_id": 252,
+      "start": 70,
+      "end": 80
+    },
+    {
+      "program_id": "teledeporte_es_res_menes_laliga_hypermo_2026-01-04_0080",
+      "channel_id": 252,
+      "start": 80,
+      "end": 90
+    },
+    {
+      "program_id": "euronews_es_euronews_week_end_2026-01-04_0090",
+      "channel_id": 94,
+      "start": 90,
+      "end": 98
+    },
+    {
+      "program_id": "eitbbasque_es_tb_kirolak_2026-01-04_0100",
+      "channel_id": 83,
+      "start": 100,
+      "end": 120
+    },
+    {
+      "program_id": "deutschewelle_es_dw_news_2026-01-04_0120",
+      "channel_id": 75,
+      "start": 120,
+      "end": 122
+    },
+    {
+      "program_id": "deutschewelle_es_sports_life_dw_2026-01-04_0122",
+      "channel_id": 75,
+      "start": 122,
+      "end": 135
+    },
+    {
+      "program_id": "euronews_es_euronews_week_end_2026-01-04_0149",
+      "channel_id": 94,
+      "start": 149,
+      "end": 154
+    },
+    {
+      "program_id": "tvgeuropa_es_expedici_n_galicia_2026-01-04_0155",
+      "channel_id": 247,
+      "start": 155,
+      "end": 160
+    },
+    {
+      "program_id": "ib3_es_el_temps_2026-01-04_0165",
+      "channel_id": 110,
+      "start": 165,
+      "end": 175
+    },
+    {
+      "program_id": "24horas_es_telediario_internacional_2026-01-04_0180",
+      "channel_id": 1,
+      "start": 180,
+      "end": 210
+    },
+    {
+      "program_id": "euronews_es_euronews_week_end_2026-01-04_0210",
+      "channel_id": 94,
+      "start": 210,
+      "end": 218
+    },
+    {
+      "program_id": "euronews_es_news_2026-01-04_0218",
+      "channel_id": 94,
+      "start": 218,
+      "end": 228
+    },
+    {
+      "program_id": "cazavision_es_caza_mayor_2026-01-04_0238",
+      "channel_id": 56,
+      "start": 238,
+      "end": 269
+    },
+    {
+      "program_id": "euronews_es_5_minutes_2026-01-04_0269",
+      "channel_id": 94,
+      "start": 269,
+      "end": 274
+    },
+    {
+      "program_id": "euronews_es_news_2026-01-04_0274",
+      "channel_id": 94,
+      "start": 274,
+      "end": 300
+    },
+    {
+      "program_id": "24horas_es_telediario_internacional_2026-01-04_0300",
+      "channel_id": 1,
+      "start": 300,
+      "end": 330
+    },
+    {
+      "program_id": "dreamworks_es_mi_vida_y_yo_2026-01-04_0330",
+      "channel_id": 82,
+      "start": 330,
+      "end": 345
+    },
+    {
+      "program_id": "france24_fr_es_le_journal_de_l_afrique_2026-01-04_0345",
+      "channel_id": 100,
+      "start": 345,
+      "end": 360
+    },
+    {
+      "program_id": "france24_fr_es_a_la_une_le_journal_2026-01-04_0360",
+      "channel_id": 100,
+      "start": 360,
+      "end": 375
+    },
+    {
+      "program_id": "telemadrid_es_hora_deportiva_fin_de_se_2026-01-04_0379",
+      "channel_id": 254,
+      "start": 379,
+      "end": 380
+    },
+    {
+      "program_id": "euronews_es_5_minutes_2026-01-04_0389",
+      "channel_id": 94,
+      "start": 389,
+      "end": 394
+    },
+    {
+      "program_id": "divinity_es_nuestro_propio_castillo__2026-01-04_0396",
+      "channel_id": 81,
+      "start": 396,
+      "end": 410
+    },
+    {
+      "program_id": "euronews_es_5_minutes_2026-01-04_0420",
+      "channel_id": 94,
+      "start": 420,
+      "end": 425
+    },
+    {
+      "program_id": "aragontv_es_arag_n_deportes_2_2026-01-04_0425",
+      "channel_id": 17,
+      "start": 425,
+      "end": 440
+    },
+    {
+      "program_id": "france24_fr_es_sports_2026-01-04_0442",
+      "channel_id": 100,
+      "start": 442,
+      "end": 450
+    },
+    {
+      "program_id": "euronews_es_5_minutes_2026-01-04_0450",
+      "channel_id": 94,
+      "start": 450,
+      "end": 458
+    },
+    {
+      "program_id": "m_vamos_es_lo_mejor_de_bakal_t25_26_2026-01-04_0460",
+      "channel_id": 130,
+      "start": 460,
+      "end": 475
+    },
+    {
+      "program_id": "m_vamos_es_deporteplus_t25_26_03_01_2026-01-04_0475",
+      "channel_id": 130,
+      "start": 475,
+      "end": 505
+    },
+    {
+      "program_id": "euronews_es_5_minutes_2026-01-04_0509",
+      "channel_id": 94,
+      "start": 509,
+      "end": 514
+    },
+    {
+      "program_id": "beteve_es_catakrac_2026-01-04_0515",
+      "channel_id": 33,
+      "start": 515,
+      "end": 539
+    },
+    {
+      "program_id": "euronews_es_5_minutes_2026-01-04_0540",
+      "channel_id": 94,
+      "start": 540,
+      "end": 545
+    },
+    {
+      "program_id": "m_originales_es_bakal_express_t25_26_2026-01-04_0549",
+      "channel_id": 179,
+      "start": 549,
+      "end": 558
+    },
+    {
+      "program_id": "m_originales_es_deporteplus_t25_26_03_01_2026-01-04_0558",
+      "channel_id": 179,
+      "start": 558,
+      "end": 588
+    },
+    {
+      "program_id": "euronews_es_news_2026-01-04_0588",
+      "channel_id": 94,
+      "start": 588,
+      "end": 600
+    },
+    {
+      "program_id": "euronews_es_5_minutes_2026-01-04_0600",
+      "channel_id": 94,
+      "start": 600,
+      "end": 605
+    },
+    {
+      "program_id": "ib3_es_mosaic_2026-01-04_0605",
+      "channel_id": 110,
+      "start": 605,
+      "end": 630
+    },
+    {
+      "program_id": "france24_fr_es_paris_direct_le_journal_2026-01-04_0630",
+      "channel_id": 100,
+      "start": 630,
+      "end": 645
+    },
+    {
+      "program_id": "france24_fr_es_sports_2026-01-04_0651",
+      "channel_id": 100,
+      "start": 651,
+      "end": 660
+    },
+    {
+      "program_id": "deutschewelle_es_dw_news_2026-01-04_0660",
+      "channel_id": 75,
+      "start": 660,
+      "end": 675
+    },
+    {
+      "program_id": "deutschewelle_es_sports_life_dw_2026-01-04_0675",
+      "channel_id": 75,
+      "start": 675,
+      "end": 690
+    },
+    {
+      "program_id": "euronews_es_5_minutes_2026-01-04_0690",
+      "channel_id": 94,
+      "start": 690,
+      "end": 698
+    },
+    {
+      "program_id": "euronews_es_news_2026-01-04_0698",
+      "channel_id": 94,
+      "start": 698,
+      "end": 708
+    },
+    {
+      "program_id": "daznlaliga_es_res_menes_laliga_hypermo_2026-01-04_0720",
+      "channel_id": 71,
+      "start": 720,
+      "end": 735
+    },
+    {
+      "program_id": "daznlaliga_es_res_menes_laliga_hypermo_2026-01-04_0735",
+      "channel_id": 71,
+      "start": 735,
+      "end": 750
+    },
+    {
+      "program_id": "france24_fr_es_paris_direct_le_journal_2026-01-04_0750",
+      "channel_id": 100,
+      "start": 750,
+      "end": 765
+    },
+    {
+      "program_id": "france24_fr_es_sports_2026-01-04_0770",
+      "channel_id": 100,
+      "start": 770,
+      "end": 775
+    },
+    {
+      "program_id": "france24_fr_es_paris_direct_le_journal_2026-01-04_0780",
+      "channel_id": 100,
+      "start": 780,
+      "end": 795
+    },
+    {
+      "program_id": "france24_fr_es_l_invit_de_paris_direct_2026-01-04_0795",
+      "channel_id": 100,
+      "start": 795,
+      "end": 810
+    },
+    {
+      "program_id": "daznlaliga_es_res_menes_dazn_laliga_ea_2026-01-04_0810",
+      "channel_id": 71,
+      "start": 810,
+      "end": 825
+    },
+    {
+      "program_id": "euronews_es_news_2026-01-04_0828",
+      "channel_id": 94,
+      "start": 828,
+      "end": 840
+    },
+    {
+      "program_id": "euronews_es_5_minutes_2026-01-04_0840",
+      "channel_id": 94,
+      "start": 840,
+      "end": 845
+    },
+    {
+      "program_id": "eurosport2_es_copa_del_mundo_de_esqu_d_2026-01-04_0780",
+      "channel_id": 96,
+      "start": 845,
+      "end": 875
+    },
+    {
+      "program_id": "eurosport2_es_copa_del_mundo_de_esqu_d_2026-01-04_0875",
+      "channel_id": 96,
+      "start": 875,
+      "end": 885
+    },
+    {
+      "program_id": "castillalamanchatv_la_cancha_2026-01-04_0885",
+      "channel_id": 55,
+      "start": 885,
+      "end": 895
+    },
+    {
+      "program_id": "euronews_es_5_minutes_2026-01-04_0900",
+      "channel_id": 94,
+      "start": 900,
+      "end": 905
+    },
+    {
+      "program_id": "ib3_es_el_temps_2026-01-04_0905",
+      "channel_id": 110,
+      "start": 905,
+      "end": 915
+    },
+    {
+      "program_id": "lasexta_es_lasexta_meteo_2026-01-04_0925",
+      "channel_id": 128,
+      "start": 925,
+      "end": 930
+    },
+    {
+      "program_id": "cncworld_es_deportes_1_2026-01-04_0935",
+      "channel_id": 42,
+      "start": 935,
+      "end": 940
+    },
+    {
+      "program_id": "cncworld_es_el_tiempo_2026-01-04_0940",
+      "channel_id": 42,
+      "start": 940,
+      "end": 945
+    },
+    {
+      "program_id": "antena3_es_deportes_fin_de_semana_2026-01-04_0945",
+      "channel_id": 16,
+      "start": 945,
+      "end": 955
+    },
+    {
+      "program_id": "clantve_es_bluey_cortos_2026-01-04_0956",
+      "channel_id": 58,
+      "start": 956,
+      "end": 959
+    },
+    {
+      "program_id": "tvcanaria_es_tn_deportes_fin_de_seman_2026-01-04_0960",
+      "channel_id": 241,
+      "start": 960,
+      "end": 975
+    },
+    {
+      "program_id": "tvcanaria_es_el_tiempo_fin_de_semana_2026-01-04_0975",
+      "channel_id": 241,
+      "start": 975,
+      "end": 980
+    },
+    {
+      "program_id": "324_es_temps_de_neu_2026-01-04_0985",
+      "channel_id": 2,
+      "start": 985,
+      "end": 990
+    },
+    {
+      "program_id": "324_es_not_cies_3catinfo_2026-01-04_0990",
+      "channel_id": 2,
+      "start": 990,
+      "end": 1020
+    },
+    {
+      "program_id": "euronews_es_5_minutes_2026-01-04_1020",
+      "channel_id": 94,
+      "start": 1020,
+      "end": 1025
+    },
+    {
+      "program_id": "m_vamos_es_lo_mejor_de_bakal_t25_26_2026-01-04_1030",
+      "channel_id": 130,
+      "start": 1030,
+      "end": 1045
+    },
+    {
+      "program_id": "disneyjunior_es_bluey_2026-01-04_1045",
+      "channel_id": 80,
+      "start": 1045,
+      "end": 1055
+    },
+    {
+      "program_id": "euronews_es_news_2026-01-04_1058",
+      "channel_id": 94,
+      "start": 1058,
+      "end": 1068
+    },
+    {
+      "program_id": "euronews_es_news_2026-01-04_1068",
+      "channel_id": 94,
+      "start": 1068,
+      "end": 1080
+    },
+    {
+      "program_id": "m_laligauhd_es_la_casa_del_f_tbol_previ_2026-01-04_1080",
+      "channel_id": 161,
+      "start": 1080,
+      "end": 1104
+    },
+    {
+      "program_id": "tv5monde_es_m_t_o_2026-01-04_1107",
+      "channel_id": 240,
+      "start": 1107,
+      "end": 1110
+    },
+    {
+      "program_id": "324_es_not_cies_3catinfo_2026-01-04_1110",
+      "channel_id": 2,
+      "start": 1110,
+      "end": 1140
+    },
+    {
+      "program_id": "deutschewelle_es_dw_news_2026-01-04_1140",
+      "channel_id": 75,
+      "start": 1140,
+      "end": 1155
+    },
+    {
+      "program_id": "daznlaliga_es_p_ker_fc_vinicius_se_ala_2026-01-04_1125",
+      "channel_id": 71,
+      "start": 1155,
+      "end": 1185
+    },
+    {
+      "program_id": "daznlaliga_es_res_menes_laliga_hypermo_2026-01-04_1185",
+      "channel_id": 71,
+      "start": 1185,
+      "end": 1200
+    },
+    {
+      "program_id": "deutschewelle_es_dw_news_2026-01-04_1200",
+      "channel_id": 75,
+      "start": 1200,
+      "end": 1215
+    },
+    {
+      "program_id": "deutschewelle_es_sports_life_dw_2026-01-04_1215",
+      "channel_id": 75,
+      "start": 1215,
+      "end": 1230
+    },
+    {
+      "program_id": "etb1_es_kirolak_etb1_2026-01-04_1235",
+      "channel_id": 84,
+      "start": 1235,
+      "end": 1250
+    },
+    {
+      "program_id": "etb1_es_eguraldia_fin_de_semana__2026-01-04_1250",
+      "channel_id": 84,
+      "start": 1250,
+      "end": 1260
+    },
+    {
+      "program_id": "telemadrid_es_hora_deportiva_fin_de_se_2026-01-04_1260",
+      "channel_id": 254,
+      "start": 1260,
+      "end": 1272
+    },
+    {
+      "program_id": "telemadrid_es_el_tiempo_fin_de_semana_2026-01-04_1272",
+      "channel_id": 254,
+      "start": 1272,
+      "end": 1278
+    },
+    {
+      "program_id": "france24_fr_es_sports_dimanche_2026-01-04_1281",
+      "channel_id": 100,
+      "start": 1281,
+      "end": 1290
+    },
+    {
+      "program_id": "euronews_es_5_minutes_2026-01-04_1290",
+      "channel_id": 94,
+      "start": 1290,
+      "end": 1298
+    },
+    {
+      "program_id": "euronews_es_news_2026-01-04_1298",
+      "channel_id": 94,
+      "start": 1298,
+      "end": 1308
+    },
+    {
+      "program_id": "bomcine_es_deportes_2_2026-01-04_1310",
+      "channel_id": 30,
+      "start": 1310,
+      "end": 1315
+    },
+    {
+      "program_id": "tvcanaria_es_tn_deportes_fin_de_seman_2026-01-04_1320",
+      "channel_id": 241,
+      "start": 1320,
+      "end": 1335
+    },
+    {
+      "program_id": "tvcanaria_es_el_tiempo_fin_de_semana_2026-01-04_1335",
+      "channel_id": 241,
+      "start": 1335,
+      "end": 1340
+    },
+    {
+      "program_id": "andaluciatv_es_lances_2026-01-04_1290",
+      "channel_id": 15,
+      "start": 1340,
+      "end": 1370
+    },
+    {
+      "program_id": "tvg2_es_o_tempo_2026-01-04_1370",
+      "channel_id": 246,
+      "start": 1370,
+      "end": 1375
+    },
+    {
+      "program_id": "esport3_es_zz_2026-01-04_1375",
+      "channel_id": 93,
+      "start": 1375,
+      "end": 1380
+    },
+    {
+      "program_id": "tveinternacional_e_cine_2026-01-04_1320",
+      "channel_id": 244,
+      "start": 1385,
+      "end": 1415
+    },
+    {
+      "program_id": "boing_es_game_shakers_2026-01-04_1416",
+      "channel_id": 36,
+      "start": 1416,
+      "end": 1439
+    }
+  ],
+  "total_score": 6655
+}
