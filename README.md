@@ -171,13 +171,13 @@ Kjo siguron që zgjidhjet më të mira të mos humben gjatë crossover-it dhe mu
 
 Rezultatet e algoritmit gjenetik ruhen në folderin:
 
-results_ga/
+`results_ga/`
 
 Për çdo instancë krijohet një file output me schedule-in më të mirë të gjetur nga GA.
 
 Gjithashtu, rezultatet përmbledhëse ruhen në:
 
-tables/results_ga_summary2.csv
+`tables/results_ga_summary2.csv`
 
 ## Rezultatet eksperimentale
 
