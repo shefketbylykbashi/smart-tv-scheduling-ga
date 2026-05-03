@@ -1,1 +1,0 @@
-instance,execution,config_id,score,feasible,deterministic_seed_score,ga_score,switches,partials,bonus,program_score,revisits,normalized_length,top_k,population_size,elite_count,seed,time_limit_seconds,allow_program_revisit,revisit_penalty,runtime_seconds,output_file,error

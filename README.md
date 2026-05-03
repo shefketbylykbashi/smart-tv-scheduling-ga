@@ -167,19 +167,41 @@ Elitizmi ruan individët më të mirë të popullatës dhe i kalon direkt në gj
 
 Kjo siguron që zgjidhjet më të mira të mos humben gjatë crossover-it dhe mutation-it.
 
-## Ekzekutimi për shumë instanca
+## Rezultatet
 
-Rezultatet e algoritmit gjenetik ruhen në folderin:
+Rezultatet eksperimentale të algoritmit gjenetik janë gjeneruar përmes parameter tuning. Për secilën instancë janë ekzekutuar 10 konfigurime të ndryshme, ku secili konfigurim ka kombinim të ndryshëm të parametrave `top_k`, `population_size`, `elite_count` dhe `seed`.
+
+Rezultatet e plota ruhen edhe në:
+
+`tables/results_Final.csv`
+
+Output-et individuale të algoritmit gjenetik për secilin ekzekutim ruhen në folderin:
 
 `results_ga/`
 
-Për çdo instancë krijohet një file output me schedule-in më të mirë të gjetur nga GA.
+## Përmbledhja e rezultateve më të mira GA kundrejt Deterministic
 
-Gjithashtu, rezultatet përmbledhëse ruhen në:
+| instance | deterministic_score | best_ga_score | difference | improvement_% | best_execution | config_id |
+|---|---:|---:|---:|---:|---:|---|
+| australia_iptv | 4883 | 4897 | +14 | 0.29% | 9 | C09 |
+| canada_pw | 5663 | 5671 | +8 | 0.14% | 3 | C03 |
+| china_pw | 3016 | 3116 | +100 | 3.32% | 2 | C02 |
+| croatia_tv_input | 2220 | 2220 | 0 | 0.00% | 1 | C01 |
+| france_iptv | 10983 | 10983 | 0 | 0.00% | 1 | C01 |
+| germany_tv_input | 1481 | 1608 | +127 | 8.58% | 4 | C04 |
+| kosovo_tv_input | 2572 | 2591 | +19 | 0.74% | 3 | C03 |
+| netherlands_tv_input | 2584 | 2635 | +51 | 1.97% | 2 | C02 |
+| singapore_pw | 6986 | 6986 | 0 | 0.00% | 1 | C01 |
+| spain_iptv | 6655 | 6655 | 0 | 0.00% | 1 | C01 |
+| toy | 510 | 510 | 0 | 0.00% | 1 | C01 |
+| uk_iptv | 9948 | 9948 | 0 | 0.00% | 1 | C01 |
+| uk_tv_input | 2266 | 2266 | 0 | 0.00% | 1 | C01 |
+| us_iptv | 5560 | 5560 | 0 | 0.00% | 1 | C01 |
+| usa_tv_input | 3579 | 3601 | +22 | 0.61% | 2 | C02 |
+| youtube_gold | 107435 | 107439 | +4 | 0.00% | 1 | C01 |
+| youtube_premium | 67862 | 67862 | 0 | 0.00% | 1 | C01 |
 
-`tables/results_ga_summary2.csv`
-
-## Rezultatet eksperimentale
+## Rezultatet eksperimentale për secilin ekzekutim
 
 | instance | execution | config_id | score | feasible | deterministic_seed_score | ga_score | switches | partials | bonus | program_score | revisits | normalized_length | top_k | population_size | elite_count | seed | allow_program_revisit | revisit_penalty | output_file | error |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
