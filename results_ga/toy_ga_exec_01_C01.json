@@ -1,0 +1,67 @@
+{
+  "scheduled_programs": [
+    {
+      "program_id": "n1",
+      "channel_id": 0,
+      "start": 540,
+      "end": 600
+    },
+    {
+      "program_id": "n2",
+      "channel_id": 0,
+      "start": 600,
+      "end": 660
+    },
+    {
+      "program_id": "s1",
+      "channel_id": 1,
+      "start": 810,
+      "end": 840
+    },
+    {
+      "program_id": "s2",
+      "channel_id": 1,
+      "start": 840,
+      "end": 960
+    },
+    {
+      "program_id": "m1",
+      "channel_id": 2,
+      "start": 960,
+      "end": 1020
+    }
+  ],
+  "total_score": 510,
+  "meta": {
+    "seed": 1051,
+    "feasible": true,
+    "population_size": 24,
+    "elite_count": 2,
+    "time_limit_seconds": 60,
+    "runtime_seconds": 60.0116,
+    "deterministic_seed_score": 510,
+    "ga_score": 510,
+    "switches": 2,
+    "partials": 1,
+    "bonus": 130,
+    "program_score": 400,
+    "revisits": 0,
+    "normalized_length": 5,
+    "top_k_segments_per_program": 8,
+    "allow_program_revisit": false,
+    "revisit_penalty": 25
+  },
+  "parameter_tuning": {
+    "instance": "toy",
+    "execution": 1,
+    "config_id": "C01",
+    "top_k": 8,
+    "population_size": 24,
+    "elite_count": 2,
+    "seed": 1051,
+    "time_limit_seconds": 60,
+    "allow_program_revisit": false,
+    "revisit_penalty": 25,
+    "runtime_seconds": 60.0122
+  }
+}
