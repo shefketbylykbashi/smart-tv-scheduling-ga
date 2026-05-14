@@ -37,11 +37,6 @@ BASE_SEED = 42
 #
 # If you want all instances with their best parameters, leave this:
 TARGET_INSTANCES = [
-    "australia_iptv",
-    "canada_pw",
-    "china_pw",
-    "croatia_tv_input",
-    "france_iptv",
     "germany_tv_input",
     "kosovo_tv_input",
     "netherlands_tv_input",

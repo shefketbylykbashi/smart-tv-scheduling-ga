@@ -19,32 +19,32 @@
       "end": 570
     },
     {
-      "program_id": "P7_detective",
-      "channel_id": 3,
+      "program_id": "ARD_morningmag",
+      "channel_id": 0,
       "start": 570,
       "end": 600
     },
     {
-      "program_id": "P7_comedy",
-      "channel_id": 3,
+      "program_id": "ARD_documentary",
+      "channel_id": 0,
       "start": 600,
       "end": 630
     },
     {
-      "program_id": "ARD_documentary",
-      "channel_id": 0,
+      "program_id": "P7_comedy",
+      "channel_id": 3,
       "start": 630,
       "end": 660
     },
     {
-      "program_id": "ARD_lunch_news",
-      "channel_id": 0,
+      "program_id": "P7_lunch_talk",
+      "channel_id": 3,
       "start": 660,
       "end": 690
     },
     {
-      "program_id": "P7_lunch_talk",
-      "channel_id": 3,
+      "program_id": "ARD_lunch_news",
+      "channel_id": 0,
       "start": 690,
       "end": 720
     },
@@ -163,47 +163,47 @@
       "end": 1380
     }
   ],
-  "total_score": 1608,
+  "total_score": 1603,
   "meta": {
-    "seed": 4078,
+    "seed": 13159,
     "feasible": true,
     "population_size": 32,
     "elite_count": 2,
     "crossover_rate": 0.85,
     "mutation_rate": 0.35,
     "time_limit_seconds": 60,
-    "ga_runtime_seconds": 67.5507,
-    "runtime_seconds": 67.5578,
+    "ga_runtime_seconds": 65.389,
+    "runtime_seconds": 65.3935,
     "deterministic_seed_score": 1481,
-    "ga_score": 1608,
+    "ga_score": 1603,
     "switches": 18,
     "partials": 26,
     "bonus": 255,
-    "program_score": 2053,
+    "program_score": 2048,
     "revisits": 0,
     "normalized_length": 27,
     "top_k_segments_per_program": 8,
     "allow_program_revisit": false,
     "revisit_penalty": 25,
     "deterministic_max_iters": 40,
-    "ga_generations": 190,
-    "ga_best_score_before_local_search": 1608,
+    "ga_generations": 283,
+    "ga_best_score_before_local_search": 1603,
     "local_search_used": true,
-    "local_search_initial_score": 1608,
-    "local_search_final_score": 1608,
+    "local_search_initial_score": 1603,
+    "local_search_final_score": 1603,
     "local_search_gain": 0,
     "local_search_iterations": 18,
     "local_search_improvements": 0,
-    "local_search_runtime_seconds": 7.3512,
+    "local_search_runtime_seconds": 5.2745,
     "local_search_move_counts": {}
   },
   "experiment": {
     "runs": 1,
-    "best_score": 1608,
-    "average_score": 1608.0,
+    "best_score": 1603,
+    "average_score": 1603.0,
     "std_dev": 0.0,
     "scores": [
-      1608
+      1603
     ],
     "top_k": 8,
     "population_size": 32,

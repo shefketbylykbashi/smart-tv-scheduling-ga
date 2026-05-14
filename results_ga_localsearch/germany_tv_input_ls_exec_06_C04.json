@@ -165,15 +165,15 @@
   ],
   "total_score": 1608,
   "meta": {
-    "seed": 4078,
+    "seed": 9123,
     "feasible": true,
     "population_size": 32,
     "elite_count": 2,
     "crossover_rate": 0.85,
     "mutation_rate": 0.35,
     "time_limit_seconds": 60,
-    "ga_runtime_seconds": 67.5507,
-    "runtime_seconds": 67.5578,
+    "ga_runtime_seconds": 70.6677,
+    "runtime_seconds": 70.6735,
     "deterministic_seed_score": 1481,
     "ga_score": 1608,
     "switches": 18,
@@ -187,15 +187,17 @@
     "revisit_penalty": 25,
     "deterministic_max_iters": 40,
     "ga_generations": 190,
-    "ga_best_score_before_local_search": 1608,
+    "ga_best_score_before_local_search": 1598,
     "local_search_used": true,
-    "local_search_initial_score": 1608,
+    "local_search_initial_score": 1598,
     "local_search_final_score": 1608,
-    "local_search_gain": 0,
-    "local_search_iterations": 18,
-    "local_search_improvements": 0,
-    "local_search_runtime_seconds": 7.3512,
-    "local_search_move_counts": {}
+    "local_search_gain": 10,
+    "local_search_iterations": 26,
+    "local_search_improvements": 1,
+    "local_search_runtime_seconds": 10.5824,
+    "local_search_move_counts": {
+      "replace_segment": 1
+    }
   },
   "experiment": {
     "runs": 1,
