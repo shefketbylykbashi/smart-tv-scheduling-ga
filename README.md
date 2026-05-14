@@ -375,3 +375,32 @@ Output-et individuale të algoritmit gjenetik për secilin ekzekutim ruhen në f
 | youtube_premium | 8 | C08 | 67862 | True | 67862 | 67862 | 780 | 83 | 23408 | 63906 | 0 | 786 | 10 | 40 | 3 | 8114 | False | 25 | `results_ga\youtube_premium_ga_exec_08_C08.json` |  |
 | youtube_premium | 9 | C09 | 67862 | True | 67862 | 67862 | 780 | 83 | 23408 | 63906 | 0 | 786 | 12 | 40 | 3 | 9123 | False | 25 | `results_ga\youtube_premium_ga_exec_09_C09.json` |  |
 | youtube_premium | 10 | C10 | 67862 | True | 67862 | 67862 | 780 | 83 | 23408 | 63906 | 0 | 786 | 15 | 40 | 3 | 10132 | False | 25 | `results_ga\youtube_premium_ga_exec_10_C10.json` |  |
+
+## Analiza dhe përzgjedhja e kombinimit optimal të parametrave të algoritmit
+Analiza e parametrave u realizua duke ekzekutuar algoritmin gjenetik me 10 konfigurime të ndryshme për secilën instancë. Parametrat kryesorë të testuar ishin `top_k`, `population_size`, `elite_count` dhe `seed`, ndërsa `allow_program_revisit` dhe `revisit_penalty` u mbajtën konstantë. Kombinimi optimal për secilën instancë u përzgjodh në bazë të score-it më të lartë të arritur. Rezultatet tregojnë se konfigurimi optimal i parametrave nuk është i njëjtë për të gjitha instancat, sepse secila instancë ka karakteristika të ndryshme strukturore dhe kohore që ndikojnë drejtpërdrejt në sjelljen e algoritmit. Në disa raste, një konfigurim me top_k më të madh dhe population_size më të lartë mundëson eksplorim më të gjerë të hapësirës së zgjidhjeve dhe rrit mundësinë për të gjetur schedule më të mirë. Megjithatë, në instanca të tjera, rritja e këtyre parametrave nuk sjell domosdoshmërisht përmirësim, sepse zgjidhja deterministike mund të jetë tashmë shumë afër optimumit ose kufizimet e problemit mund ta ngushtojnë hapësirën e përmirësimit. Për këtë arsye, performanca e algoritmit varet nga faktorë si madhësia e instancës, numri i programeve dhe kanaleve, dendësia e mbivendosjeve kohore, shpërndarja e priority blocks, penalizimet për ndërrime kanalesh dhe transmetime parciale.
+
+### Konfigurimi më i mirë për secilën instancë
+
+| Instance | Best Config | top_k | population_size | elite_count | seed | Deterministic Score | Best GA Score | Improvement |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| australia_iptv | C09 | 12 | 40 | 3 | 9123 | 4883 | 4897 | +14 |
+| canada_pw | C03 | 12 | 24 | 2 | 3069 | 5663 | 5671 | +8 |
+| china_pw | C02 | 10 | 24 | 2 | 2060 | 3016 | 3116 | +100 |
+| croatia_tv_input | C01 | 8 | 24 | 2 | 1051 | 2220 | 2220 | 0 |
+| france_iptv | C01 | 8 | 24 | 2 | 1051 | 10983 | 10983 | 0 |
+| germany_tv_input | C04 | 8 | 32 | 2 | 4078 | 1481 | 1608 | +127 |
+| kosovo_tv_input | C03 | 12 | 24 | 2 | 3069 | 2572 | 2591 | +19 |
+| netherlands_tv_input | C02 | 10 | 24 | 2 | 2060 | 2584 | 2635 | +51 |
+| singapore_pw | C01 | 8 | 24 | 2 | 1051 | 6986 | 6986 | 0 |
+| spain_iptv | C01 | 8 | 24 | 2 | 1051 | 6655 | 6655 | 0 |
+| toy | C01 | 8 | 24 | 2 | 1051 | 510 | 510 | 0 |
+| uk_iptv | C01 | 8 | 24 | 2 | 1051 | 9948 | 9948 | 0 |
+| uk_tv_input | C01 | 8 | 24 | 2 | 1051 | 2266 | 2266 | 0 |
+| us_iptv | C01 | 8 | 24 | 2 | 1051 | 5560 | 5560 | 0 |
+| usa_tv_input | C02 | 10 | 24 | 2 | 2060 | 3579 | 3601 | +22 |
+| youtube_gold | C01 | 8 | 24 | 2 | 1051 | 107435 | 107439 | +4 |
+| youtube_premium | C01 | 8 | 24 | 2 | 1051 | 67862 | 67862 | 0 |
+
+## Local Search
+
+Pas fazës evolucionare të Genetic Algorithm, implementimi aplikon një **Multi-Neighborhood Greedy Local Search** si fazë intensifikimi mbi schedule-in më të mirë të gjetur. Ky Local Search nuk fillon kërkimin nga zero, por merr zgjidhjen më të mirë të GA-së dhe eksploron fqinjësinë e saj përmes disa lëvizjeve lokale, si zëvendësimi i segmenteve me alternativa të afërta në kohë, futja e programeve në hapësira të lira, zgjerimi i transmetimeve parciale, largimi i segmenteve me kontribut të dobët, rindërtimi i blloqeve të vogla të schedule-it dhe vazhdimi në të njëjtin kanal për të reduktuar penalizimet nga channel switching. Çdo kandidat i ri riparohet dhe rivlerësohet sipas funksionit objektiv, ndërsa pranohet vetëm nëse e përmirëson score-in aktual. Në këtë mënyrë, GA përdoret për eksplorim më të gjerë të hapësirës së zgjidhjeve, ndërsa Local Search shërben për përmirësim të imët lokal rreth zgjidhjes më premtuese.
