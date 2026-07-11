@@ -1,185 +1,185 @@
 # Genetic Algorithm for Smart TV Scheduling
 
-## Përshkrimi i problemit
+## Problem Description
 
-Smart TV Scheduling in Public Venues është një problem optimizimi ku sistemi duhet të ndërtojë një orar transmetimi për një ekran të vetëm në një hapësirë publike, duke zgjedhur programe nga disa kanale televizive. Çdo kanal ka një listë programesh me kohë fikse fillimi dhe mbarimi, zhanër dhe pikë popullariteti.
+Smart TV Scheduling in Public Venues is an optimization problem in which the system must construct a broadcast schedule for a single screen in a public venue by selecting programs from several TV channels. Each channel contains a list of programs with fixed start and end times, a genre, and a popularity score.
 
-Qëllimi është të gjendet një schedule që maksimizon rezultatin total, duke respektuar kufizime të rëndësishme si mos-mbivendosja e programeve, kohëzgjatja minimale e transmetimit, kufizimet e priority blocks, kufizimi i programeve të njëpasnjëshme me të njëjtin zhanër dhe penalizimet për ndërrim kanali apo transmetime parciale.
+The goal is to find a schedule that maximizes the total score while respecting important constraints such as non-overlapping programs, minimum broadcast duration, priority-block restrictions, the limit on consecutive programs with the same genre, and penalties for channel switching or partial broadcasts.
 
-## Qëllimi i zgjidhjes
+## Goal of the Solution
 
-Zgjidhja e implementuar përdor një qasje hibride:
+The implemented solution uses a hybrid approach:
 
 ```text
-Zgjidhje deterministike fillestare
+Initial deterministic solution
         +
-Algoritëm gjenetik për përmirësim
+Genetic Algorithm for improvement
 ```
-Fillimisht, algoritmi deterministik ndërton një zgjidhje fillestare valide. Kjo zgjidhje përdoret si seed solution për algoritmin gjenetik. Pastaj GA krijon variante të ndryshme të kësaj zgjidhjeje përmes operatorëve të mutacionit dhe crossover-it, i riparon ato nëse shkelin kufizime, i vlerëson me funksionin objektiv dhe gradualisht ruan zgjidhjet më të mira.
+First, the deterministic algorithm constructs an initial valid solution. This solution is used as a seed solution for the Genetic Algorithm. The GA then creates different variants of this solution through mutation and crossover operators, repairs them if they violate constraints, evaluates them using the objective function, and gradually preserves the best solutions.
 
 
-### Rrjedha e përgjithshme e algoritmit
+### General Algorithm Flow
 
-Procesi kryesor është:
+The main process is:
 ```text
 input.json
    ↓
-ndërtimi i segmenteve kandidate
+building candidate segments
    ↓
-filtrimi i segmenteve më të mira
+filtering the best segments
    ↓
-algoritmi deterministik gjeneron zgjidhjen fillestare
+the deterministic algorithm generates the initial solution
    ↓
-krijohet popullata fillestare për GA
+the initial GA population is created
    ↓
-popullata evoluon me selection, crossover, mutation, repair dhe fitness evaluation
+the population evolves through selection, crossover, mutation, repair, and fitness evaluation
    ↓
-ruhet zgjidhja më e mirë
+the best solution is stored
    ↓
-procesi përsëritet disa herë
+the process is repeated several times
    ↓
-kthehet rezultati më i mirë final
+the best final result is returned
 ```
-Për çdo instancë, algoritmi mund të ekzekutohet disa herë me seed të ndryshëm. Në fund, nga të gjitha ekzekutimet merret rezultati me score më të lartë.
+For each instance, the algorithm can be executed several times with different seeds. In the end, the run with the highest score is selected as the final result.
 
-### Konceptimi i algoritmit gjenetik
+### Genetic Algorithm Design
 
-Në këtë zgjidhje, një individ përfaqëson një schedule kandidat. Një schedule përbëhet nga segmente të programeve të zgjedhura:
+In this solution, an individual represents a candidate schedule. A schedule consists of selected program segments:
 ```text
 (program_id, channel_id, start, end)
 ```
-Popullata është një grup schedules. Fillimisht, popullata krijohet nga zgjidhja deterministike dhe nga variante të saj. Gjatë evolucionit, individët më të mirë zgjidhen si prindër, kombinohen me crossover, ndryshohen me mutation dhe pastaj riparohen për të respektuar kufizimet e problemit.
+The population is a set of schedules. Initially, the population is created from the deterministic solution and variants of it. During evolution, the best individuals are selected as parents, combined through crossover, modified through mutation, and then repaired to satisfy the problem constraints.
 
-#### Si evoluon popullata
+#### How the Population Evolves
 
-Në çdo gjeneratë ndodhin këto hapa:
+In each generation, the following steps are performed:
 
-- Popullata renditet sipas score-it
-- Individët më të mirë ruhen direkt përmes elitizmit
-- Zgjidhen prindër përmes tournament selection
-- Nga dy prindër krijohet një child përmes crossover
-- Child mund të ndryshohet përmes mutation
-- Child kalon në repair për t'u bërë valid
-- Llogaritet score-i i child-it
-- Popullata e re ndërtohet me individët më të mirë dhe children e rinj
-- Nëse nuk ka përmirësim për disa gjenerata, aplikohet mutacion më i fortë për të shmangur ngecjen në local optimum
+- The population is sorted by score
+- The best individuals are preserved directly through elitism
+- Parents are selected through tournament selection
+- A child is created from two parents through crossover
+- The child may be modified through mutation
+- The child is passed through repair to become valid
+- The child's score is calculated
+- The new population is built from the best individuals and the new children
+- If there is no improvement for several generations, stronger mutation is applied to avoid getting stuck in a local optimum
 
-Ky proces vazhdon deri sa të përfundojë limiti kohor i ekzekutimit.
+This process continues until the execution time limit is reached.
 
-### Parametrat kryesorë të algoritmit
+### Main Algorithm Parameters
 
-| Parametri | Përshkrimi |
+| Parameter | Description |
 |-----------|----------|
-| runs | Numri i ekzekutimeve të pavarura për një instancë. Çdo run përdor seed të ndryshëm. |
-| time_limit | Koha maksimale e evolucionit për një run. |
-| population_size | Numri i individëve në popullatë. |
-| elite_count | Numri i individëve më të mirë që kalojnë direkt në gjeneratën tjetër. |
-| crossover_rate | Probabiliteti që dy prindër të kombinohen me crossover. |
-| mutation_rate | Probabiliteti që një child të ndryshohet me mutation. |
-| top_k | Numri maksimal i segmenteve më të mira që mbahen për çdo program. |
-| seed | Vlera fillestare për randomizim. |
-| allow_program_revisit | Tregon nëse i njëjti program lejohet të përdoret më shumë se një herë. |
-| revisit_penalty | Penalizimi nëse një program përsëritet, kur përsëritja lejohet. |
+| runs | Number of independent executions for one instance. Each run uses a different seed. |
+| time_limit | Maximum evolution time for one run. |
+| population_size | Number of individuals in the population. |
+| elite_count | Number of best individuals that pass directly to the next generation. |
+| crossover_rate | Probability that two parents are combined through crossover. |
+| mutation_rate | Probability that a child is modified through mutation. |
+| top_k | Maximum number of best segments kept for each program. |
+| seed | Initial value used for randomization. |
+| allow_program_revisit | Indicates whether the same program is allowed to appear more than once. |
+| revisit_penalty | Penalty applied when a program is repeated, if repetition is allowed. |
 
-## Operatorët e përdorur
+## Operators Used
 
 ### 1. Selection
 
-Përdoret tournament selection.
+Tournament selection is used.
 
-Ky operator zgjedh disa individë në mënyrë të rastësishme nga popullata dhe prej tyre merr atë me score më të lartë. Ky individ përdoret si prind për crossover.
+This operator randomly selects several individuals from the population and chooses the one with the highest score. This individual is then used as a parent for crossover.
 
-Qëllimi i selection është që individët më të mirë të kenë më shumë mundësi të kontribuojnë në gjeneratat e ardhshme.
+The purpose of selection is to give better individuals a higher chance of contributing to future generations.
 
 ### 2. Crossover
 
-Janë përdorur dy operatorë crossover.
+Two crossover operators are used.
 
 #### Time-cut crossover
 
-Ky operator zgjedh një pikë kohore dhe krijon një child duke marrë pjesën para asaj kohe nga një prind dhe pjesën pas asaj kohe nga prindi tjetër.
+This operator selects a time point and creates a child by taking the part before that time from one parent and the part after that time from the other parent.
 
-Kjo është e përshtatshme për këtë problem sepse schedule-i është i varur drejtpërdrejt nga koha.
+This is suitable for this problem because the schedule is directly time-dependent.
 
 #### Block-mix crossover
 
-Ky operator zgjedh një interval kohor dhe kombinon një bllok segmentesh nga një prind me segmentet jashtë atij blloku nga prindi tjetër.
+This operator selects a time interval and combines a block of segments from one parent with the segments outside that block from the other parent.
 
-Qëllimi është të ruhet një pjesë e mirë e schedule-it nga një prind, ndërsa pjesa tjetër merret nga prindi tjetër.
+The goal is to preserve a good part of the schedule from one parent while taking the remaining part from the other parent.
 
 ### 3. Mutation
 
-Janë përdorur pesë operatorë mutacioni.
+Five mutation operators are used.
 
 #### Replace segment mutation
 
-Zëvendëson një segment ekzistues me një alternativë tjetër nga candidate pool. Alternativa zgjidhet nga segmente që janë afër në kohë me segmentin aktual.
+Replaces an existing segment with another alternative from the candidate pool. The alternative is selected from segments that are close in time to the current segment.
 
 #### Delete weak mutation
 
-Heq segmentin që ka kontributin më të dobët në score. Ky operator përdor marginal contribution për të kuptuar sa ndikon secili segment në rezultatin total.
+Removes the segment with the weakest contribution to the score. This operator uses marginal contribution to determine how much each segment affects the total result.
 
 #### Insert gap mutation
 
-Gjen një hapësirë bosh në schedule dhe tenton të fusë një program të ri që përshtatet brenda atij intervali.
+Finds an empty gap in the schedule and attempts to insert a new program that fits within that interval.
 
 #### Expand boundary mutation
 
-Zgjeron kufijtë e një segmenti parcial, nëse ekziston një version më i gjatë i të njëjtit program që mbetet valid. Ky operator mund të ulë penalizimet për transmetime parciale.
+Expands the boundaries of a partial segment if a longer valid version of the same program exists. This operator can reduce penalties for partial broadcasts.
 
 #### Block rebuild mutation
 
-Heq një pjesë të schedule-it dhe e rindërton duke futur kandidatë të rinj. Ky operator ndihmon në eksplorim më të fortë të hapësirës së zgjidhjeve.
+Removes a part of the schedule and rebuilds it by inserting new candidates. This operator helps perform stronger exploration of the solution space.
 
 ### 4. Repair
 
-Repair është një pjesë shumë e rëndësishme e zgjidhjes. Pas crossover-it ose mutation-it, një child mund të ketë probleme si overlap, shkelje të priority blocks ose tejkalim të kufirit të zhanrit të njëpasnjëshëm.
+Repair is a very important part of the solution. After crossover or mutation, a child may contain issues such as overlaps, priority-block violations, or exceeding the limit on consecutive programs with the same genre.
 
-Repair bën këto veprime:
+Repair performs the following actions:
 
-- Heq segmente invalid
-- Largon mbivendosjet
-- Ruan segmentet me vlerë më të lartë
-- Heq përdorimet e dyfishta të të njëjtit program
-- Rregullon sekuencat me shumë programe të njëpasnjëshme të të njëjtit zhanër
-- Tenton të mbushë gap-et kur kjo e rrit score-in
-- E kthen schedule-in në formë valide
+- Removes invalid segments
+- Removes overlaps
+- Keeps the higher-value segments
+- Removes duplicate usage of the same program
+- Fixes sequences with too many consecutive programs of the same genre
+- Attempts to fill gaps when this increases the score
+- Returns the schedule in a valid form
 
 ### 5. Fitness evaluation
 
-Çdo individ vlerësohet me funksionin objektiv:
+Each individual is evaluated using the objective function:
 
 ```
 score = program_score + bonus - switch_penalty * switches - termination_penalty * partials
 ```
 
-Kjo do të thotë se një schedule është më i mirë nëse:
+This means that a schedule is better if it:
 
-- Ka programe me score më të lartë
-- Fiton më shumë bonus nga time preferences
-- Ka më pak ndërrime kanalesh
-- Ka më pak transmetime parciale
-- Respekton të gjitha kufizimet
+- Contains programs with higher scores
+- Gains more bonus from time preferences
+- Has fewer channel switches
+- Has fewer partial broadcasts
+- Satisfies all constraints
 
 ### 6. Elitism
 
-Elitizmi ruan individët më të mirë të popullatës dhe i kalon direkt në gjeneratën tjetër pa i ndryshuar.
+Elitism preserves the best individuals in the population and passes them directly to the next generation without modification.
 
-Kjo siguron që zgjidhjet më të mira të mos humben gjatë crossover-it dhe mutation-it.
+This ensures that the best solutions are not lost during crossover and mutation.
 
-## Rezultatet
+## Results
 
-Rezultatet eksperimentale të algoritmit gjenetik janë gjeneruar përmes parameter tuning. Për secilën instancë janë ekzekutuar 10 konfigurime të ndryshme, ku secili konfigurim ka kombinim të ndryshëm të parametrave `top_k`, `population_size`, `elite_count` dhe `seed`.
+The experimental results of the Genetic Algorithm were generated through parameter tuning. For each instance, 10 different configurations were executed, where each configuration used a different combination of `top_k`, `population_size`, `elite_count`, and `seed`.
 
-Rezultatet e plota ruhen edhe në:
+The complete results are also stored in:
 
 `tables/results_Final.csv`
 
-Output-et individuale të algoritmit gjenetik për secilin ekzekutim ruhen në folderin:
+The individual Genetic Algorithm outputs for each execution are stored in the folder:
 
 `results_ga/`
 
-## Përmbledhja e rezultateve më të mira GA kundrejt Deterministic
+## Summary of the Best GA Results Compared to Deterministic
 
 | instance | deterministic_score | best_ga_score | difference | improvement_% | best_execution | config_id |
 |---|---:|---:|---:|---:|---:|---|
@@ -201,7 +201,7 @@ Output-et individuale të algoritmit gjenetik për secilin ekzekutim ruhen në f
 | youtube_gold | 107435 | 107439 | +4 | 0.00% | 1 | C01 |
 | youtube_premium | 67862 | 67862 | 0 | 0.00% | 1 | C01 |
 
-## Rezultatet eksperimentale për secilin ekzekutim
+## Results eksperimentale për secilin ekzekutim
 
 | instance | execution | config_id | score | feasible | deterministic_seed_score | ga_score | switches | partials | bonus | program_score | revisits | normalized_length | top_k | population_size | elite_count | seed | allow_program_revisit | revisit_penalty | output_file | error |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -376,10 +376,10 @@ Output-et individuale të algoritmit gjenetik për secilin ekzekutim ruhen në f
 | youtube_premium | 9 | C09 | 67862 | True | 67862 | 67862 | 780 | 83 | 23408 | 63906 | 0 | 786 | 12 | 40 | 3 | 9123 | False | 25 | `results_ga\youtube_premium_ga_exec_09_C09.json` |  |
 | youtube_premium | 10 | C10 | 67862 | True | 67862 | 67862 | 780 | 83 | 23408 | 63906 | 0 | 786 | 15 | 40 | 3 | 10132 | False | 25 | `results_ga\youtube_premium_ga_exec_10_C10.json` |  |
 
-## Analiza dhe përzgjedhja e kombinimit optimal të parametrave të algoritmit
-Analiza e parametrave u realizua duke ekzekutuar algoritmin gjenetik me 10 konfigurime të ndryshme për secilën instancë. Parametrat kryesorë të testuar ishin `top_k`, `population_size`, `elite_count` dhe `seed`, ndërsa `allow_program_revisit` dhe `revisit_penalty` u mbajtën konstantë. Kombinimi optimal për secilën instancë u përzgjodh në bazë të score-it më të lartë të arritur. Rezultatet tregojnë se konfigurimi optimal i parametrave nuk është i njëjtë për të gjitha instancat, sepse secila instancë ka karakteristika të ndryshme strukturore dhe kohore që ndikojnë drejtpërdrejt në sjelljen e algoritmit. Në disa raste, një konfigurim me top_k më të madh dhe population_size më të lartë mundëson eksplorim më të gjerë të hapësirës së zgjidhjeve dhe rrit mundësinë për të gjetur schedule më të mirë. Megjithatë, në instanca të tjera, rritja e këtyre parametrave nuk sjell domosdoshmërisht përmirësim, sepse zgjidhja deterministike mund të jetë tashmë shumë afër optimumit ose kufizimet e problemit mund ta ngushtojnë hapësirën e përmirësimit. Për këtë arsye, performanca e algoritmit varet nga faktorë si madhësia e instancës, numri i programeve dhe kanaleve, dendësia e mbivendosjeve kohore, shpërndarja e priority blocks, penalizimet për ndërrime kanalesh dhe transmetime parciale.
+## Analysis and Selection of the Optimal Algorithm Parameter Combination
+The parameter analysis was performed by executing the Genetic Algorithm with 10 different configurations for each instance. The main tested parameters were `top_k`, `population_size`, `elite_count`, and `seed`, while `allow_program_revisit` and `revisit_penalty` were kept constant. The optimal combination for each instance was selected based on the highest score achieved. The results show that the optimal parameter configuration is not the same for all instances, because each instance has different structural and temporal characteristics that directly influence the behavior of the algorithm. In some cases, a configuration with a larger `top_k` and a higher `population_size` enables broader exploration of the solution space and increases the possibility of finding a better schedule. However, in other instances, increasing these parameters does not necessarily lead to improvement, because the deterministic solution may already be very close to the optimum or the problem constraints may narrow the space for improvement. Therefore, the algorithm performance depends on factors such as instance size, the number of programs and channels, the density of temporal overlaps, the distribution of priority blocks, and the penalties for channel switches and partial broadcasts.
 
-### Konfigurimi më i mirë për secilën instancë
+### Best Configuration for Each Instance
 
 | Instance | Best Config | top_k | population_size | elite_count | seed | Deterministic Score | Best GA Score | Improvement |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
@@ -403,9 +403,9 @@ Analiza e parametrave u realizua duke ekzekutuar algoritmin gjenetik me 10 konfi
 
 ## Local Search
 
-Pas fazës evolucionare të Genetic Algorithm, implementimi aplikon një **Multi-Neighborhood Greedy Local Search** si fazë intensifikimi mbi schedule-in më të mirë të gjetur. Ky Local Search nuk fillon kërkimin nga zero, por merr zgjidhjen më të mirë të GA-së dhe eksploron fqinjësinë e saj përmes disa lëvizjeve lokale, si zëvendësimi i segmenteve me alternativa të afërta në kohë, futja e programeve në hapësira të lira, zgjerimi i transmetimeve parciale, largimi i segmenteve me kontribut të dobët, rindërtimi i blloqeve të vogla të schedule-it dhe vazhdimi në të njëjtin kanal për të reduktuar penalizimet nga channel switching. Çdo kandidat i ri riparohet dhe rivlerësohet sipas funksionit objektiv, ndërsa pranohet vetëm nëse e përmirëson score-in aktual. Në këtë mënyrë, GA përdoret për eksplorim më të gjerë të hapësirës së zgjidhjeve, ndërsa Local Search shërben për përmirësim të imët lokal rreth zgjidhjes më premtuese.
+After the evolutionary phase of the Genetic Algorithm, the implementation applies a **Multi-Neighborhood Greedy Local Search** as an intensification phase on the best schedule found. This Local Search does not start the search from zero; instead, it takes the best GA solution and explores its neighborhood through several local moves, such as replacing segments with time-nearby alternatives, inserting programs into free gaps, expanding partial broadcasts, removing low-contribution segments, rebuilding small schedule blocks, and continuing on the same channel to reduce channel-switching penalties. Each new candidate is repaired and re-evaluated according to the objective function, and it is accepted only if it improves the current score. In this way, the GA is used for broader exploration of the solution space, while Local Search performs fine-grained local improvement around the most promising solution.
 
-## Rezultatet Eksperimentale Local Search
+## Results Eksperimentale Local Search
 
 | instance             |   execution | config_id   |   top_k |   population |   elite |   seed |   time_limit_seconds |   score | feasible   |   deterministic_seed_score |   ga_score |   switches |   partials |   bonus |   program_score |   revisits |   normalized_length | local_search_used   |   local_search_initial_score |   local_search_final_score |   local_search_gain |   local_search_iterations |   local_search_improvements |   local_search_runtime_seconds |   runtime_seconds | output_file                                                     | status    |   error |
 |:---------------------|------------:|:------------|--------:|-------------:|--------:|-------:|---------------------:|--------:|:-----------|---------------------------:|-----------:|-----------:|-----------:|--------:|----------------:|-----------:|--------------------:|:--------------------|-----------------------------:|---------------------------:|--------------------:|--------------------------:|----------------------------:|-------------------------------:|------------------:|:----------------------------------------------------------------|:----------|--------:|
@@ -567,7 +567,7 @@ Pas fazës evolucionare të Genetic Algorithm, implementimi aplikon një **Multi
 | youtube_gold         |           6 | C01         |       8 |           24 |       2 |   6096 |                   60 |  107441 | True       |                     107435 |     107441 |       3424 |       3456 |   42356 |          288893 |          0 |                3457 | True                |                       107441 |                     107441 |                   0 |                         0 |                           0 |                        17.228  |         2854.92   | results_ga_localsearch\youtube_gold_ls_exec_06_C01.json         | completed |     nan |
 | youtube_gold         |           7 | C01         |       8 |           24 |       2 |   7105 |                   60 |  107439 | True       |                     107435 |     107439 |       3424 |       3456 |   42356 |          288891 |          0 |                3457 | True                |                       107439 |                     107439 |                   0 |                         0 |                           0 |                        17.8135 |         2817.32   | results_ga_localsearch\youtube_gold_ls_exec_07_C01.json         | completed |     nan |
 
-### Përmbledhje e rezultateve me GA + Local Search
+### Summary of Results with GA + Local Search
 
 | Instance | Best Exec. | Config | top_k | Population | Elite | Seed | Deterministic | GA | GA + Local Search | GA Improvement | LS Improvement | Total Improvement |
 |---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
