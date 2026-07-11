@@ -1,5 +1,7 @@
 # Algorithmic Notes
 
+These notes describe the deterministic dynamic-programming baseline implemented in `src/smart_tv_scheduler_scoreboost.py`. The GA and GA + local-search variants use this deterministic solver as their seed generator; their additional operators are summarized in `docs/methodology.md`.
+
 ## Problem Definition
 
 The TV Channel Scheduling problem considered in this repository consists of selecting and ordering content from multiple channels over a fixed time horizon. Each channel provides a sequence of programs defined by start time, end time, genre, and a base score. The goal is to construct a valid broadcast schedule that maximizes total utility.
@@ -33,7 +35,7 @@ The implementation follows a structured pipeline:
 
 ## Determinism and Termination
 
-The implementation is fully deterministic. It does not rely on randomness, and all tie-breaking rules are resolved in a fixed and reproducible manner. For a fixed input instance and identical configuration, repeated executions produce identical schedules and scores.
+The deterministic baseline is fully deterministic. It does not rely on randomness, and all tie-breaking rules are resolved in a fixed and reproducible manner. For a fixed input instance and identical configuration, repeated executions produce identical schedules and scores.
 
 Termination is guaranteed. The segment generation phase produces a finite set of candidates. The dynamic programming phase processes this set in a single forward sweep. The duplicate-elimination procedure is bounded by a fixed maximum number of iterations and removes at least one conflicting segment in each step, ensuring convergence in practice.
 

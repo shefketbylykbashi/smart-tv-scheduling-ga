@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite it using the metadata below."
+title: "Smart TV Scheduling Genetic Algorithm Artifact"
+version: "1.0.0"
+date-released: "2026-07-11"
+license: "MIT"
+authors:
+  - family-names: "Bylygbashi"
+    given-names: "Shefket"
+abstract: "Research artifact for a Smart TV Scheduling optimization approach that combines a deterministic dynamic-programming seed, a Genetic Algorithm, and optional local-search intensification."
+keywords:
+  - "smart TV scheduling"
+  - "genetic algorithm"
+  - "local search"
+  - "dynamic programming"
+  - "timetabling"
+  - "PATAT 2026"
+preferred-citation:
+  type: conference-paper
+  title: "Genetic Algorithm for Smart TV Scheduling"
+  authors:
+    - family-names: "Bylygbashi"
+      given-names: "Shefket"
+  conference: "PATAT 2026"
+  year: 2026
